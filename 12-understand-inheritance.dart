@@ -1,5 +1,5 @@
 void main() {
-  var student = Student('Clark', 'Griswald');
+  var student = Student('Sherlock', 'Holmes');
   print(student.getFullName());
 }
 
@@ -13,5 +13,5 @@ class Person {
 }
 
 class Student extends Person {
-  Student(String firstName, String lastName) : super(firstName, lastName);
+  Student(super.firstName, super.lastName);
 }

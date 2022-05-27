@@ -9,6 +9,7 @@ void main() {
 
 class Teacher {
   List<int> grades;
+
   Teacher(this.grades);
 
   int getAverage() {
@@ -21,7 +22,7 @@ class Teacher {
 }
 
 class StudentTeacher extends Teacher {
-  StudentTeacher(List<int> grades) : super(grades);
+  StudentTeacher(super.grades);
 
   @override
   int getAverage() => super.getAverage() + 5;
